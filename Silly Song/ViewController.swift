@@ -45,7 +45,11 @@ class ViewController: UIViewController {
 
     private func shortNameFrom(name: String) -> String {
         let vowels = "aeiou".characters
-        let characters = name.characters
+        
+        // making the name lowercased and then gettings its
+        // characters, fixed the issue where names with first vowel
+        // letter would be truncated.
+        let characters = name.lowercased().characters
     
         var firstVowelIndex = -1
         for (index, char) in characters.enumerated() {
@@ -59,6 +63,7 @@ class ViewController: UIViewController {
             // vowel not found
             return name
         }
+        
         return name.substring(from: name.index(name.startIndex, offsetBy: firstVowelIndex)).lowercased()
     }
     
