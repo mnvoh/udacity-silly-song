@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Silly_Song" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjj-Zz-ijm">
+                                <rect key="frame" x="105" y="239.5" width="165" height="53"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usk-Je-TmG">
+                                <rect key="frame" x="16" y="318.5" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" text="mmm" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bu3-gG-9rI">
+                                <rect key="frame" x="16" y="378.5" width="343" height="258.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.42741364240646362" blue="0.4742322564125061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.95599351275317868" green="1" blue="0.95437951099920371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.42635699770488156" blue="0.47509517766497467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="usk-Je-TmG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3DI-vR-m6f"/>
+                            <constraint firstItem="usk-Je-TmG" firstAttribute="top" secondItem="qjj-Zz-ijm" secondAttribute="bottom" constant="25.5" id="9uR-ib-PDz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bu3-gG-9rI" secondAttribute="bottom" constant="30" id="Ecj-lj-dfM"/>
+                            <constraint firstItem="Bu3-gG-9rI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HLO-Vd-mgQ"/>
+                            <constraint firstItem="usk-Je-TmG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OHu-BJ-NRu"/>
+                            <constraint firstItem="usk-Je-TmG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P8N-tx-r9l"/>
+                            <constraint firstItem="Bu3-gG-9rI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="idC-vO-hnu"/>
+                            <constraint firstItem="Bu3-gG-9rI" firstAttribute="top" secondItem="usk-Je-TmG" secondAttribute="bottom" constant="30" id="tKq-fN-bia"/>
+                            <constraint firstItem="qjj-Zz-ijm" firstAttribute="centerX" secondItem="usk-Je-TmG" secondAttribute="centerX" id="upm-Mn-T59"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lyricsView" destination="Bu3-gG-9rI" id="I5a-h5-x8I"/>
+                        <outlet property="nameField" destination="usk-Je-TmG" id="7f9-Up-9l9"/>
+                        <outlet property="textFieldVCenterConstraint" destination="P8N-tx-r9l" id="tLQ-ft-FmZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
