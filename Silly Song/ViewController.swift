@@ -60,7 +60,7 @@ class ViewController: UIViewController {
         
         if firstVowelIndex < 0 {
             // vowel not found
-            return name
+            return name.lowercased()
         }
         
         return name.substring(from: name.index(name.startIndex, offsetBy: firstVowelIndex)).lowercased()
