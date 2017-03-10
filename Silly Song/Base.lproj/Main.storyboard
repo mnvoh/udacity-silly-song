@@ -34,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bu3-gG-9rI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bu3-gG-9rI">
                                 <rect key="frame" x="16" y="172" width="343" height="475"/>
                                 <color key="backgroundColor" red="0.0" green="0.42741364240646362" blue="0.4742322564125061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.95599351275317868" green="1" blue="0.95437951099920371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
