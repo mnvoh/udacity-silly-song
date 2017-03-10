@@ -23,19 +23,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjj-Zz-ijm">
-                                <rect key="frame" x="105" y="239.5" width="165" height="53"/>
+                                <rect key="frame" x="105" y="43" width="165" height="53"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="37"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usk-Je-TmG">
-                                <rect key="frame" x="16" y="318.5" width="343" height="30"/>
+                                <rect key="frame" x="16" y="122" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" text="mmm" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bu3-gG-9rI">
-                                <rect key="frame" x="16" y="378.5" width="343" height="258.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bu3-gG-9rI">
+                                <rect key="frame" x="16" y="172" width="343" height="475"/>
                                 <color key="backgroundColor" red="0.0" green="0.42741364240646362" blue="0.4742322564125061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.95599351275317868" green="1" blue="0.95437951099920371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -44,21 +44,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.42635699770488156" blue="0.47509517766497467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="usk-Je-TmG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3DI-vR-m6f"/>
-                            <constraint firstItem="usk-Je-TmG" firstAttribute="top" secondItem="qjj-Zz-ijm" secondAttribute="bottom" constant="25.5" id="9uR-ib-PDz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bu3-gG-9rI" secondAttribute="bottom" constant="30" id="Ecj-lj-dfM"/>
-                            <constraint firstItem="Bu3-gG-9rI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HLO-Vd-mgQ"/>
-                            <constraint firstItem="usk-Je-TmG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OHu-BJ-NRu"/>
-                            <constraint firstItem="usk-Je-TmG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P8N-tx-r9l"/>
-                            <constraint firstItem="Bu3-gG-9rI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="idC-vO-hnu"/>
-                            <constraint firstItem="Bu3-gG-9rI" firstAttribute="top" secondItem="usk-Je-TmG" secondAttribute="bottom" constant="30" id="tKq-fN-bia"/>
-                            <constraint firstItem="qjj-Zz-ijm" firstAttribute="centerX" secondItem="usk-Je-TmG" secondAttribute="centerX" id="upm-Mn-T59"/>
+                            <constraint firstItem="usk-Je-TmG" firstAttribute="centerX" secondItem="qjj-Zz-ijm" secondAttribute="centerX" id="AA1-5q-ZHK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="usk-Je-TmG" secondAttribute="trailing" id="ELC-zP-XnD"/>
+                            <constraint firstItem="qjj-Zz-ijm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K1L-YK-JlN"/>
+                            <constraint firstItem="qjj-Zz-ijm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="SyB-Mk-dZN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bu3-gG-9rI" secondAttribute="bottom" constant="20" id="aFR-Tt-Z6F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bu3-gG-9rI" secondAttribute="trailing" id="h4T-gf-lgk"/>
+                            <constraint firstItem="usk-Je-TmG" firstAttribute="top" secondItem="qjj-Zz-ijm" secondAttribute="bottom" constant="26" id="h58-DM-EWY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="usk-Je-TmG" secondAttribute="leading" id="hUm-VZ-adQ"/>
+                            <constraint firstItem="Bu3-gG-9rI" firstAttribute="top" secondItem="usk-Je-TmG" secondAttribute="bottom" constant="20" id="j5K-FV-fD4"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Bu3-gG-9rI" secondAttribute="leading" id="kPE-s1-Adg"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lyricsView" destination="Bu3-gG-9rI" id="I5a-h5-x8I"/>
                         <outlet property="nameField" destination="usk-Je-TmG" id="7f9-Up-9l9"/>
-                        <outlet property="textFieldVCenterConstraint" destination="P8N-tx-r9l" id="tLQ-ft-FmZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

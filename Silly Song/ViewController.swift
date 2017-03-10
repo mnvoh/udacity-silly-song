@@ -73,22 +73,11 @@ class ViewController: UIViewController {
         }
         
         lyricsView.text = lyricsFor(fullName: fullName, template: bananaFanaTemplate)
-        
-        textFieldVCenterConstraint.constant = -(self.view.frame.height / 2 - 120)
-        UIView.animate(withDuration: 0.5, animations: {
-            self.lyricsView.alpha = 1
-            self.view.layoutIfNeeded()
-        })
     }
     
     fileprivate func reset() {
         nameField.text = ""
         lyricsView.text = ""
-        textFieldVCenterConstraint.constant = 0
-        UIView.animate(withDuration: 0.5, animations: {
-            self.lyricsView.alpha = 0
-            self.view.layoutIfNeeded()
-        })
     }
 }
 
