@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     // MARK: - IBOutlets
     @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var textFieldVCenterConstraint: NSLayoutConstraint!
     @IBOutlet weak var lyricsView: UITextView!
     
     // MARK: - Properties
